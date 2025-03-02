@@ -1,0 +1,217 @@
+# Base of style
+BasedOnStyle: LLVM
+
+# Alignment Configuration
+AlignAfterOpenBracket: BlockIndent
+AlignArrayOfStructures: Left
+AlignConsecutiveAssignments:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignCompound: true
+  PadOperators: true
+AlignConsecutiveBitFields:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+AlignConsecutiveDeclarations:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+  #AlignFunctionPointers: true # only clang-format >= 18
+AlignConsecutiveMacros: 
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments: true
+AlignConsecutiveShortCaseStatements:
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments: true
+  AlignCaseColons: true
+AlignEscapedNewlines: Right
+AlignOperands: Align
+AlignTrailingComments: 
+  Kind: Always
+  OverEmptyLines: 2
+
+# Allowance configuration
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowShortBlocksOnASingleLine: Never
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortEnumsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+
+# Breaking configuration
+AlwaysBreakBeforeMultilineStrings: false
+
+# Bin-packing configuration
+BinPackArguments: true
+BinPackParameters: true
+
+BitFieldColonSpacing: Both
+
+# Bracing configuration
+BraceWrapping:
+  AfterCaseLabel: true
+  AfterControlStatement: Always
+  AfterEnum: true
+  AfterFunction: true
+  AfterStruct: true
+  AfterUnion: true
+  AfterExternBlock: true
+  BeforeElse: true
+  BeforeWhile: false
+  IndentBraces: false
+  SplitEmptyFunction: true
+  SplitEmptyRecord: true
+  SplitEmptyNamespace: true
+BracedInitializerIndentWidth: 8
+
+# Breaking configuration (continuation)
+#BreakAdjacentStringLiterals: false # only clang-format >= 18
+BreakArrays: false
+BreakBeforeBinaryOperators: None
+BreakBeforeBraces: Custom
+BreakBeforeInlineASMColon: OnlyMultiline
+BreakBeforeTernaryOperators: true
+BreakStringLiterals: true
+
+ColumnLimit: 120
+
+ContinuationIndentWidth: 8
+
+DerivePointerAlignment: false
+
+DisableFormat: false
+
+#ForEachMacros: []
+
+#IfMacros: []
+
+IncludeBlocks: Regroup
+#IncludeCategories:
+#IncludeIsMainRegex:
+#IncludeIsMainSourceRegex:
+
+IndentCaseBlocks: false
+IndentCaseLabels: false
+IndentExternBlock: NoIndent
+IndentGotoLabels: true
+IndentPPDirectives: BeforeHash
+IndentWidth: 8
+IndentWrappedFunctionNames: true
+
+InsertBraces: false
+InsertNewlineAtEOF: true
+InsertTrailingCommas: None
+
+#IntegerLiteralSeparator:
+#  Binary: 0
+#  BinaryMinDigits: 0
+#  Decimal: 0
+#  DecimalMinDigits: 0
+#  Hex: 0
+#  HexMinDigits: 0
+
+Language: Cpp
+
+LineEnding: LF
+
+#MacroBlockBegin: ""
+#MacroBlockEnd: ""
+#Macros: 
+#  - 
+
+MaxEmptyLinesToKeep: 2
+
+PPIndentWidth: -1
+
+#PenaltyBreakAssignment:
+#PenaltyBreakBeforeFirstCallParameter: 
+#PenaltyBreakComment: 
+#PenaltyBreakFirstLessLess: 
+#PenaltyBreakOpenParenthesis: 
+#PenaltyBreakScopeResolution: 
+#PenaltyBreakString: 
+#PenaltyBreakTemplateDeclaration: 
+#PenaltyExcessCharacter: 
+#PenaltyIndentedWhitespace: 
+#PenaltyReturnTypeOnItsOwnLine: 
+
+PointerAlignment: Right
+
+QualifierAlignment: Leave
+#QualifierOrder: []
+
+#RawStringFormats:
+#  - Language: TextProto
+#      Delimiters:
+#        - pb
+#        - proto
+#      EnclosingFunctions:
+#        - PARSE_TEXT_PROTO
+#      BasedOnStyle: google
+#  - Language: Cpp
+#      Delimiters:
+#        - cc
+#        - cpp
+#      BasedOnStyle: LLVM
+#      CanonicalDelimiter: cc
+
+ReferenceAlignment: Right
+
+ReflowComments: true
+
+#RemoveBracesLLVM: false # this option will be altered in the future
+RemoveParentheses: Leave
+RemoveSemicolon: false
+
+SeparateDefinitionBlocks: Always
+
+#SkipMacroDefinitionBody: false # only clang-format >= 18
+
+SortIncludes: CaseSensitive
+
+# Spacing configuration
+SpaceAfterCStyleCast: false
+SpaceAfterLogicalNot: false
+SpaceAroundPointerQualifiers: Default 
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCaseColon: false
+SpaceBeforeParens: Custom
+SpaceBeforeParensOptions:
+  AfterControlStatements: false
+  AfterForeachMacros: false
+  AfterFunctionDeclarationName: false
+  AfterFunctionDefinitionName: false
+  AfterIfMacros: false
+  BeforeNonEmptyParentheses: false
+SpaceBeforeSquareBrackets: false
+SpaceInEmptyBlock: false
+SpacesBeforeTrailingComments: 1
+SpacesInLineCommentPrefix:
+  Maximum: -1
+  Minimum: 1
+SpacesInParens: Never
+#SpacesInParensOptions:
+#  ExceptDoubleParentheses:
+#  InConditionalStatements:
+#  InCStyleCasts:
+#  InEmptyParentheses:
+#  Other:
+SpacesInSquareBrackets: false
+
+Standard: Auto
+
+#StatementAttributeLikeMacros: []
+#StatementMacros
+
+TabWidth: 8
+
+#TypeNames: []
+TypenameMacros: [CONT_OPERATOR_OF, CONT_ARRAY_OPERATOR_OF, CONT_ARRAY_OF]
+
+UseTab: Never

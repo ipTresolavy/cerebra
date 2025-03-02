@@ -1,0 +1,1 @@
+skip connections: func with two args, both being a generic layer. User can Input Identity layer
