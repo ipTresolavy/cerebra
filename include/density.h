@@ -241,4 +241,3 @@ void crbr_free_gmm(crbr_gmm_t *gmm);
 #endif
 
 #endif // DENSITY_H
-

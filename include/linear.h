@@ -2,15 +2,17 @@
 #define LINEAR_H
 
 #ifdef __cplusplus
-extern "C" {
+extern "C"
+{
 #endif
 
 /**
  * @brief Enumeration for specifying matrix memory layout.
  */
-typedef enum {
-    CRBR_ROW_MAJOR, /**< Matrices are stored in row-major order */
-    CRBR_COL_MAJOR  /**< Matrices are stored in column-major order */
+typedef enum
+{
+        CRBR_ROW_MAJOR, /**< Matrices are stored in row-major order */
+        CRBR_COL_MAJOR  /**< Matrices are stored in column-major order */
 } crbr_order_t;
 
 /**
@@ -83,7 +85,9 @@ void crbr_gemv(crbr_order_t order, int m, int n, const double *A, const double *
  * @param incy Stride within vector y.
  * @param A Pointer to the matrix A to be updated.
  */
-void crbr_ger(crbr_order_t order, int m, int n, double alpha, const double *x, int incx, const double *y, int incy, double *A);
+void crbr_ger(
+        crbr_order_t order, int m, int n, double alpha, const double *x, int incx, const double *y, int incy, double *A
+);
 
 #ifdef __cplusplus
 }

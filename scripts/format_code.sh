@@ -2,6 +2,7 @@
 
 SCRIPTPATH="$(
   cd -- "$(dirname "$0")" >/dev/null 2>&1 || return 255
+  cd ..
   pwd -P
 )"
 
